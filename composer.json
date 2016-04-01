@@ -1,0 +1,29 @@
+{
+    "name": "llstarscreamll/EmployeesModule",
+    "description": "Módulo de gestión de empleados",
+    "keywords": [
+        "llstarscreamll",
+        "EmployeesModule"
+    ],
+    "license": "MIT",
+    "type": "llstarscreamll-module",
+    "authors": [
+        {
+            "name": "Johan Alvarez",
+            "email": "llstarscreamll@hotmail.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "llstarscreamll@hotmail.com",
+        "issues": "https://github.com/llstarscreamll/EmployeesModule/issues",
+        "source": "https://github.com/llstarscreamll/EmployeesModule"
+    },
+    "require": {
+        "php": ">=5.5.9"
+    },
+    "require-dev": {
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
