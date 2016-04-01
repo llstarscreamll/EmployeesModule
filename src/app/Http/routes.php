@@ -10,10 +10,6 @@
 | and give it the controller to call when that URI is requested.
 |
 */    
-Route::get('/employee/{id}/balance_access_control_hours', [
-    'as'    =>  'employee.balanceAccessControlHours',
-    'uses'  =>  '\llstarscreamll\EmployeesModule\app\Http\Controllers\EmployeeController@balanceAccessControlHours'
-]);
 Route::get('/employee/export_to_excel', [
     'as'    =>  'employee.export_to_excel',
     'uses'  =>  '\llstarscreamll\EmployeesModule\app\Http\Controllers\EmployeeController@exportToExcel'
