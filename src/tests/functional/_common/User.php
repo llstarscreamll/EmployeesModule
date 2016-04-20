@@ -67,7 +67,7 @@ class User
             'password' => bcrypt(self::$adminUser['password'])
             ]));
         $user->attachRole(2); // 2 es el id del rol admin
-        
+
         return $user;
     }
 

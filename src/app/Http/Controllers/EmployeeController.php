@@ -34,7 +34,7 @@ class EmployeeController extends Controller
 
         $employees = Employee::with('position', 'subCostCenter', 'subCostCenter.costCenter');
 
-        if($request->has('show_only')){
+        if ($request->has('show_only')) {
             switch ($request->get('show_only')) {
                 case 'trashed':
                     $employees = $employees->onlyTrashed();
@@ -290,7 +290,6 @@ class EmployeeController extends Controller
         $start = microtime(true);
 
         try {
-            
             if (count($document = \Excel::selectSheets('Empleados')
                 ->load(storage_path('imports/').$name)
                 ->ignoreEmpty()
@@ -302,7 +301,6 @@ class EmployeeController extends Controller
         }
 
         foreach ($document as $key => $row) {
-
             $validator = \Validator::make([
                 'centro de costo' => trim($row->centro_costo),
                 'subcentro de costo' => trim($row->subcentro_costo),

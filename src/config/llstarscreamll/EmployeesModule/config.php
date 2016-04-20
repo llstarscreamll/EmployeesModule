@@ -11,9 +11,9 @@
  */
 
 return [
-	'module-info'	=>	[
-		'name'		=>	'EmployeesModule',
-		'version'	=>	'0.1',
-		'enabled'	=>	true,
-	]
+    'module-info'    =>    [
+        'name'        =>    'EmployeesModule',
+        'version'    =>    '0.1',
+        'enabled'    =>    true,
+    ]
 ];

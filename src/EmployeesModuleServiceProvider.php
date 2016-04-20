@@ -94,8 +94,7 @@ class EmployeesModuleServiceProvider extends ServiceProvider
      */
     private function registerServiceProviders()
     {
-        foreach ($this->providers as $provider)
-        {
+        foreach ($this->providers as $provider) {
             $this->app->register($provider);
         }
     }
@@ -107,8 +106,7 @@ class EmployeesModuleServiceProvider extends ServiceProvider
     private function registerAliases()
     {
         $loader = AliasLoader::getInstance();
-        foreach ($this->aliases as $key => $alias)
-        {
+        foreach ($this->aliases as $key => $alias) {
             $loader->alias($key, $alias);
         }
     }
